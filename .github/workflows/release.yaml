@@ -9,12 +9,12 @@ jobs:
   goreleaser:
     runs-on: ubuntu-latest
     steps:
-      - name: Get k8s-at-home token
+      - name: Get App token
         id: get-app-token
         uses: getsentry/action-github-app-token@v1
         with:
-          app_id: ${{ secrets.K8S_AT_HOME_APP_ID }}
-          private_key: ${{ secrets.K8S_AT_HOME_APP_PRIVATE_KEY }}
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
       - uses: actions/checkout@v2
         with:
