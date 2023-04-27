@@ -15,5 +15,5 @@ engine: gotpl
 
 dependencies:
   - name: nginx-ingress
-    version: "0.22.1"
+    version: "0.31.0"
     repository: "@stable"
